@@ -87,7 +87,7 @@ test_pipeline = [
     ),
 ]
 
-data_root = "/mnt/warehouse-00/datasets/Pharmacy/"
+data_root = "/mnt/nas0-pool0/datasets/Pharmacy/"
 
 metainfo = {
     'classes': (
@@ -104,7 +104,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_164259/coco.json',
+            ann_file='20240110_164259/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_164259/images')
         ),
         dict(
@@ -112,7 +112,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_151842/coco.json',
+            ann_file='20240110_151842/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_151842/images')
         ),
         dict(
@@ -120,7 +120,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_153727/coco.json',
+            ann_file='20240110_153727/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_153727/images')
         ),
         dict(
@@ -128,7 +128,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_160543/coco.json',
+            ann_file='20240110_160543/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_160543/images')
         ),
         dict(
@@ -136,7 +136,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='VID00004/coco.json',
+            ann_file='VID00004/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='VID00004/images')
         ),
         dict(
@@ -144,7 +144,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='IMG_6903/coco.json',
+            ann_file='IMG_6903/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='IMG_6903/images')
         ),
         dict(
@@ -152,7 +152,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_145107/coco.json',
+            ann_file='20240110_145107/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_145107/images')
         ),
         dict(
@@ -160,7 +160,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='VID00010/coco.json',
+            ann_file='VID00010/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='VID00010/images')
         ),
         dict(
@@ -168,7 +168,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='VID00009/coco.json',
+            ann_file='VID00009/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='VID00009/images')
         ),
         dict(
@@ -176,7 +176,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='VID00003/coco.json',
+            ann_file='VID00003/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='VID00003/images')
         ),
         dict(
@@ -184,7 +184,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_145726/coco.json',
+            ann_file='20240110_145726/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_145726/images')
         ),
         dict(
@@ -192,7 +192,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_161038/coco.json',
+            ann_file='20240110_161038/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_161038/images')
         ),
         dict(
@@ -200,7 +200,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='VID00002/coco.json',
+            ann_file='VID00002/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='VID00002/images')
         ),
         dict(
@@ -208,7 +208,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_153022/coco.json',
+            ann_file='20240110_153022/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_153022/images')
         ),
         dict(
@@ -216,7 +216,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_165145/coco.json',
+            ann_file='20240110_165145/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_165145/images')
         ),
         dict(
@@ -224,7 +224,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_165438/coco.json',
+            ann_file='20240110_165438/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_165438/images')
         ),
         dict(
@@ -232,7 +232,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_162030/coco.json',
+            ann_file='20240110_162030/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_162030/images')
         ),
         dict(
@@ -240,7 +240,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_164732/coco.json',
+            ann_file='20240110_164732/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_164732/images')
         ),
         dict(
@@ -248,7 +248,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_151727/coco.json',
+            ann_file='20240110_151727/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_151727/images')
         ),
         dict(
@@ -256,7 +256,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='VID00007/coco.json',
+            ann_file='VID00007/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='VID00007/images')
         ),
         dict(
@@ -264,7 +264,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='VID00011/coco.json',
+            ann_file='VID00011/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='VID00011/images')
         ),
         dict(
@@ -272,7 +272,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_151355/coco.json',
+            ann_file='20240110_151355/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_151355/images')
         ),
         dict(
@@ -280,7 +280,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_155131/coco.json',
+            ann_file='20240110_155131/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_155131/images')
         ),
         dict(
@@ -288,7 +288,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_155855/coco.json',
+            ann_file='20240110_155855/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_155855/images')
         ),
         dict(
@@ -296,7 +296,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='VID00012/coco.json',
+            ann_file='VID00012/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='VID00012/images')
         ),
         dict(
@@ -304,7 +304,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='IMG_6908/coco.json',
+            ann_file='IMG_6908/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='IMG_6908/images')
         ),
         dict(
@@ -312,7 +312,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_155016/coco.json',
+            ann_file='20240110_155016/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_155016/images')
         ),
         dict(
@@ -320,7 +320,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='IMG_6904/coco.json',
+            ann_file='IMG_6904/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='IMG_6904/images')
         ),
         dict(
@@ -328,7 +328,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='VID00001/coco.json',
+            ann_file='VID00001/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='VID00001/images')
         ),
         dict(
@@ -336,7 +336,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='VID00008/coco.json',
+            ann_file='VID00008/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='VID00008/images')
         ),
         dict(
@@ -344,7 +344,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_160949/coco.json',
+            ann_file='20240110_160949/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_160949/images')
         ),
         dict(
@@ -352,7 +352,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_170021/coco.json',
+            ann_file='20240110_170021/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_170021/images')
         ),
         dict(
@@ -360,7 +360,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_165113/coco.json',
+            ann_file='20240110_165113/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_165113/images')
         ),
         dict(
@@ -368,7 +368,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_153843/coco.json',
+            ann_file='20240110_153843/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_153843/images')
         ),
         dict(
@@ -376,7 +376,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_155038/coco.json',
+            ann_file='20240110_155038/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_155038/images')
         ),
         dict(
@@ -384,7 +384,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_161712/coco.json',
+            ann_file='20240110_161712/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_161712/images')
         ),
         dict(
@@ -392,7 +392,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_165757/coco.json',
+            ann_file='20240110_165757/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_165757/images')
         ),
         dict(
@@ -400,7 +400,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='IMG_6902/coco.json',
+            ann_file='IMG_6902/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='IMG_6902/images')
         ),
         dict(
@@ -408,7 +408,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_145841/coco.json',
+            ann_file='20240110_145841/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_145841/images')
         ),
         dict(
@@ -416,7 +416,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_145927/coco.json',
+            ann_file='20240110_145927/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_145927/images')
         ),
         dict(
@@ -424,7 +424,7 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file='20240110_162340/coco.json',
+            ann_file='20240110_162340/coco_bbox_0.25_filtered.json',
             data_prefix=dict(img='20240110_162340/images')
         ),
     ],
@@ -441,7 +441,7 @@ test_dataset = dict(
     metainfo=metainfo,
     data_root=data_root,
     pipeline=test_pipeline,
-    ann_file='20240110_170139/coco.json',
+    ann_file='20240110_170139/coco_bbox_0.25_filtered.json',
     data_prefix=dict(img='20240110_170139/images'),
 )
 
@@ -469,7 +469,7 @@ custom_hooks = [
 
 val_evaluator = dict(
     type="CocoMetric",
-    ann_file=data_root + "20240110_170139/coco.json",
+    ann_file=data_root + "20240110_170139/coco_bbox_0.25_filtered.json",
     metric="bbox",
     format_only=False,
 )
@@ -503,6 +503,6 @@ default_hooks = dict(
     logger=dict(interval=100),
 )
 
-# load_from = "/mnt/warehouse-00/checkpoints/rtmdet/rtmdet_nano_8xb32-300e_hand-267f9c8f.pth"
+# load_from = "/mnt/nas0-pool0/personal/qinglang/checkpoints/rtmdet/rtmdet_nano_8xb32-300e_hand-267f9c8f.pth"
 
 resume = True
