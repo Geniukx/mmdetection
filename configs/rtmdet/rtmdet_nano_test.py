@@ -1,6 +1,5 @@
 _base_ = "./rtmdet_l_8xb32-300e_coco.py"
 
-import os
 
 model = dict(
     backbone=dict(
@@ -88,8 +87,7 @@ test_pipeline = [
     ),
 ]
 
-data_root = '/mnt/fasthouse-00/qinglang/Pharmacy/'
-anno_name = 'coco_selected.json'
+data_root = "/mnt/fasthouse-00/qinglang/Pharmacy/"
 
 metainfo = {
     'classes': (
@@ -106,10 +104,9 @@ train_dataset = dict(
             metainfo=metainfo,
             data_root=data_root,
             pipeline=train_pipeline,
-            ann_file=rf'{data_name}/{anno_name}',
-            data_prefix=dict(img=rf'{data_name}/images')
-        )
-        for data_name in os.listdir(data_root) if anno_name in os.listdir(os.path.join(data_root, data_name))
+            ann_file='20240110_145107/coco_selected.json',
+            data_prefix=dict(img='20240110_145107/images')
+        ),
     ],
     ignore_keys=[
         'keypoints',
@@ -124,8 +121,8 @@ test_dataset = dict(
     metainfo=metainfo,
     data_root=data_root,
     pipeline=test_pipeline,
-    ann_file=rf'20240110_170139/{anno_name}',
-    data_prefix=dict(img='20240110_170139/images'),
+    ann_file='20240110_145107/coco_selected.json',
+    data_prefix=dict(img='20240110_145107/images'),
 )
 
 train_dataloader = dict(
@@ -150,7 +147,7 @@ custom_hooks = [
 
 val_evaluator = dict(
     type="CocoMetric",
-    ann_file=data_root + rf"20240110_170139/{anno_name}",
+    ann_file=data_root + "20240110_145107/coco_selected.json",
     metric="bbox",
     format_only=False,
 )
@@ -179,7 +176,7 @@ train_cfg = dict(
 default_hooks = dict(
     checkpoint=dict(
         interval=1,
-        max_keep_ckpts=-1
+        max_keep_ckpts=3
     ),
     logger=dict(interval=100),
 )
